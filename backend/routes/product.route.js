@@ -6,13 +6,10 @@ import { createProduct, deleteProduct, getProducts, updateProduct } from "../con
 
 const router = express.Router();
 
-router.get("/", getProducts);
-
+router.get("/", getProducts );
 router.post("/", createProduct);
-
-router.put("/:id", updateProduct);
+router.put("/id", updateProduct);
 // console.log(process.env.MONGO_URI);
-
-router.delete("/:id", deleteProduct);
+router.delete("/id", deleteProduct);
 
 export default router;
