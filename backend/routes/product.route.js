@@ -10,6 +10,6 @@ router.get("/", getProducts );
 router.post("/", createProduct);
 router.put("/id", updateProduct);
 // console.log(process.env.MONGO_URI);
-router.delete("/id", deleteProduct);
+router.delete("/:id", deleteProduct);
 
 export default router;
